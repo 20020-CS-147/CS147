@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <title>PHONE BOOK</title>
+        
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background-image:url('11.jpg'); color: white;" >
+        <div class="container"><br>
+            <h1 class=" text-center">PHONEBOOK PROJECT</h1><br>
+            <div class="col-lg-8 m-auto d-block">
+
+                <form action="#" onsubmit="return validation()">
+                    <div class="form-group">
+                        <label><b>First Name</i></b></label>
+                        <input type="text" name="user" class="form-control" id="user"
+                        placeholder="enter your first name" autocomplete="off">
+                        <span id="username" class="text-danger font-weight-bold"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Last Name</i></b></label>
+                        <input type="text" name="luser" class="form-control" id="luser"
+                        placeholder="enter your last name">
+                        <span id="lastname" class="text-danger font-weight-bold"></span>
+                    </div>
+
+                        <div class="form-group">
+                        <label><b> Phone Number</i></b></label>
+                        <input type="text" phonenumber="luser" class="form-control" id="luser"
+                        placeholder="Enter your phone number">
+                        <span id="lastname" class="text-danger font-weight-bold"></span>
+                    </div>
+                   
+
+
+                    <div>
+                        <label><b>Gender</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="gender" id="gender">Male&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="gender" id="gender">FeMale&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="gender" id="gender">Not Specified
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Email ID</i></b></label>
+                        <input type="text" name="emailid" class="form-control" id="emailid"
+                        placeholder="*@example.com">
+                        <span id="emailaddress" class="text-danger font-weight-bold"></span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label><b>Mobile Number</i></b></label>
+                        <input type="text" name="mobile" class="form-control"
+                        id="mobile" placeholder="987******">
+                        <span id="mobileno" class="text-danger font-weight-bold"></span>
+
+                    </div>
+
+                    <div>
+                        <label><b>Date Of Birth</i></b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select>
+                            <option>Day</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+
+                        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select>
+                            <option>Month</option>
+                            <option>January</option>
+                            <option>Feburary</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select>
+                            <option>Year</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                            <option>2003</option>
+                            <option>2004</option>
+                            <option>2005</option>
+                            <option>2006</option>
+                        </select><br><br>
+                    </div>
+                    
+                    <div>
+                        <label><b>Hobbies</i></b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="checkbox" />Drawing&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="checkbox"/>Singing&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="checkbox"/>Dancing&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="checkbox"/>Sketching&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" name="checkbox"/>Others&nbsp;&nbsp;&nbsp;
+                    </div><br>
+
+                    <div>
+                        <label><b>Courses Applied For</i></b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio"  name="course"/>BCA&nbsp;&nbsp;&nbsp;
+                        <input type="radio"  name="course"/>B.Com&nbsp;&nbsp;&nbsp;
+                        <input type="radio"  name="course"/>B.Sc&nbsp;&nbsp;&nbsp;
+                        <input type="radio"  name="course"/>BA&nbsp;&nbsp;&nbsp;<br><br>
+                    </div>
+
+                    <div>
+                        <label><b>Address</i></b></label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <textarea rows="7" cols="40" id ="address"placeholder="Enter your address here">
+                        </textarea><br><br>
+                        <span id="homeaddress" class="text-danger font-weight-bold"></span>
+                    </div>
+
+
+
+                    <div>
+                        <label><b>Qualifications</i></b></label><br>
+                
+                        <table>
+                            <tr>
+                                <td><b>SLNo.</i></b></td>  <td><b>Examinations</i></b></td>  <td><b>Board</i></b></td>  <td><b>Percentage</i></b></td>  <td><b>YearOfPassing</i></b></td>
+                            </tr>
+                            <tr>
+                                <td><b>1</i></b></td>  <td><b>Class X</i></b></td>  <td><input type="text" placeholder="Board" id="mnum" ></td>  <td><input type="text" placeholder="Percentage" id="mnum"></td>  <td><input type="text" placeholder="****" id="mnum"></td>
+                            </tr>
+                            <tr>
+                                <td><b>2</i></b></td>  <td><b>Class XII</i></b></td>  <td><input type="text" placeholder="Board" id="mnum"></td>  <td><input type="text" placeholder="Percentage" id="mnum"></td>  <td><input type="text" placeholder="****" id="mnum"></td>
+                            </tr>
+                            <tr>
+                                <td><b>3</i></b></td>  <td><b>Graduation</i></b></td>  <td><input type="text" placeholder="Board" id="mnum"></td>  <td><input type="text" placeholder="Percentage" id="mnum"></td>  <td><input type="text" placeholder="****" id="mnum"></td>
+                            </tr>
+                            <tr>
+                                <td><b>4</i></b></td>  <td><b>Masters</i></b></td>  <td><input type="text" placeholder="Board" id="mnum"></td>  <td><input type="text" placeholder="Percentage" id="mnum"></td><td>  <input type="text" placeholder="****" id="mnum"></td>
+                            </tr>
+
+
+                        </table><br><br>
+
+
+                        
+                        <input type="Submit" name="Submit" class="btn btn-primary" alue="submit"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="Reset" name="reset" class="btn btn-primary" value="Reset"/>
+
+                    </div>
+
+                   
+
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <script type="text/javascript">
+
+
+
+
+        function validation(){
+            var user = document.getElementById('user').value;
+            var luser = document.getElementById('luser').value;
+            var emailid = document.getElementById('emailid').value;
+            var mobile = document.getElementById('mobile').value;
+            var address = document.getElementById('address').value;
+
+
+
+
+
+            if(user == "") {
+                document.getElementById('username').innerHTML = "  ** Please enter your first name ";
+                return false;
+            }
+
+            if(luser == "") {
+                document.getElementById('lastname').innerHTML = "  ** Please enter your last name";
+                return false;
+            }
+
+            if(emailid == "") {
+                document.getElementById('emailaddress').innerHTML = "  ** Please enter your email address";
+                return false;
+            }
+
+            if(mobile == "") {
+                document.getElementById('mobileno').innerHTML = "  ** Please enter your mobile no.";
+                return false;
+            }
+
+            
+            if(address == "") {
+                document.getElementById('homeaddress').innerHTML = "  ** Please enter your mobile no.";
+                return false;
+            }
+        }
+        
+        </script>
+    </body>
+</html>
